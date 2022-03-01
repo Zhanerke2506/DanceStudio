@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Activitar Template">
+    <meta name="keywords" content="Activitar, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title  %}
+        <title>
+            Dream Studio
+        </title>
+    {% endblock title %}
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    {% block header %}
+    <!-- Header Section Begin -->
+        <header class="header-section">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'img/logo.png' %}" alt="" width="150px">
+                    </a>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    <a href="https://www.instagram.com/qanatqyzy.zh/"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div class="container">
+                    <div class="nav-menu">
+                        <nav class="mainmenu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'aboutus' %}">About us</a></li>
+                                <li><a href="{% url 'choreo' %}">Choreographers</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </header>
+     {% endblock %}
+    <!-- Header End -->
+
+    {% block content %}
+    <!-- Hero Section Begin -->
+        <section class="hero-section">
+            <div class="hero-items owl-carousel">
+                <div class="single-hero-item set-bg" data-setbg="{% static 'img/hero-slider/hero-1.jpg' %}">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="hero-text">
+                                    <h2>Join Us Now</h2>
+                                    <h1>RELAX & JUST DANCE</h1>
+                                    <a href="{% url 'aboutus' %}" class="primary-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-hero-item set-bg" data-setbg="{% static 'img/hero-slider/hero-2.jpg' %}">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="hero-text">
+                                    <h2>Join Us Now</h2>
+                                    <h1>TAKING DANCE <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTO
+                                        <br> THE NEXT
+                                        <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLEVEL</h1>
+                                    <a href="{% url 'aboutus' %}" class="primary-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-hero-item set-bg" data-setbg="{% static 'img/hero-slider/hero-3.jpg' %}">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="hero-text">
+                                    <h2>Join Us Now</h2>
+                                    <h1>RELAX & JUST DANCE</h1>
+                                    <a href="{% url 'aboutus' %}" class="primary-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero End -->
+
+        <!-- Feature Section Begin -->
+        <section class="feature-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-item set-bg" data-setbg="{% static 'img/feature/feature-2.jpg' %}">
+                            <br><br>
+                            <h3>GROUP CLASSES</h3><br>
+                            <a href="#" class="primary-btn f-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item set-bg" data-setbg="{% static 'img/feature/feature-1.jpg' %}">
+                            <br><br>
+                            <h3>PERSONAL TRAINING</h3><br>
+                            <a href="#" class="primary-btn f-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-item set-bg" data-setbg="{% static 'img/feature/feature-3.jpg' %}">
+                            <br><br>
+                            <h3>Groups of 4-5 people</h3><br>
+                            <a href="#" class="primary-btn f-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature Section End -->
+
+        <!-- About Section Begin -->
+        <section class="home-about spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-text">
+                            <h2>WELCOME TO DREAM DANCE STUDIO</h2>
+                            <p class="short-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="long-details">Proin tincidunt, diam id finibus dignissim, enim nisl pretium nisi, vitae pellentesque lectus neque ut dolor. Sed laoreet, lacus a mollis convallis, nibh mi eleifend sem, id gravida nulla dui ornare ante. Praesent velit turpis, commodo quis tortor in, malesuada congue nunc. Phasellus facilisis dolor felis, sodales commodo nisi fermentum non. In hac habitasse platea dictumst. Suspendisse enim nunc, lobortis quis justo in, congue molestie enim. Donec sollicitudin mauris nunc, quis imperdiet sapien convallis quis. Duis non dui in ligula accumsan imperdiet. Fusce fermentum enim vitae tristique laoreet.</p>
+                            <p class="long-details">Vestibulum in massa id tellus imperdiet hendrerit. Aliquam erat volutpat. Aenean et lobortis arcu. In at sapien erat. Donec lacinia ante nec scelerisque egestas. Quisque eu turpis eget dolor volutpat feugiat. Mauris tincidunt turpis nec massa euismod sollicitudin. Cras condimentum eros metus, non pharetra dolor volutpat a. Aliquam erat volutpat.</p>
+                            <a href="{% url 'aboutus' %}" class="primary-btn about-btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="{% static 'img/home-about.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Classes Section Begin -->
+        <section class="classes-section">
+            <div class="class-title set-bg" data-setbg="{% static 'img/classes-title-bg.jpg' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 m-auto text-center">
+                            <div class="section-title pl-lg-4 pr-lg-4 pl-0 pr-0">
+                                <h2>Choose Your Program</h2>
+                                <p>Nullam leo augue, rhoncus ac ornare ut, cursus vitae tellus. Maecenas dapibus vel sem quis eleifend. Duis sollicitudin vestibulum neque quis scelerisque.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="classes-item set-bg" data-setbg="{% static 'img/classes/class-1.jpg' %}">
+                            <h4>Hip-Hop</h4>
+                            <p> Vivamus nec lobortis lorem. Fusce eleifend velit nec lectus porta maximus.</p>
+                            <a href="#" class="primary-btn class-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="classes-item set-bg" data-setbg="{% static 'img/classes/class-2.jpg' %}">
+                            <h4>Ballet</h4>
+                            <p>Curabitur elit arcu, fringilla id pulvinar in, vehicula sit amet mauris. Curabitur fringilla posuere nisi, at sagittis magna suscipit at.
+                            </p>
+                            <a href="#" class="primary-btn class-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="classes-item set-bg" data-setbg="{% static 'img/classes/class-3.jpg' %}">
+                            <h4>K-pop cover</h4>
+                            <p>Curabitur nec pulvinar purus, sit amet mattis nulla.Proin quis vulputate magna, a ultricies magna.</p>
+                            <a href="#" class="primary-btn class-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="classes-item set-bg" data-setbg="{% static 'img/classes/class-4.jpg' %}">
+                            <h4>Krump</h4>
+                            <p>Nulla ac consectetur velit. Cras nec sollicitudin orci. Quisque eget nulla dui. Nullam quis mattis sem.</p>
+                            <a href="#" class="primary-btn class-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Classes Section End -->
+
+        <!-- Class Time Section Begin -->
+        <section class="classtime-section class-time-table spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title">
+                            <h2>Classtime Table</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="timetable-controls">
+                            <ul>
+                                <li class="active" data-tsfilter="all">all class</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="classtime-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="workout-time">10.00</td>
+                                <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                    <span>10.00 - 14.00</span>
+                                    <h6>Hip-Hop</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                    <span>10.00 - 15.00</span>
+                                    <h6>Hip-Hop</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                    <span>10.00 - 13.00</span>
+                                    <h6>Ballet</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                    <span>10.00 - 13.30</span>
+                                    <h6>Ballet</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">14.00</td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                    <span>14.00 - 17.00</span>
+                                    <h6>Ballet</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                    <span>14.00 - 17.00</span>
+                                    <h6>Hip-Hop</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="walls">
+                                    <span>14.00 - 15.30</span>
+                                    <h6>K-pop cover</h6>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">16.00</td>
+                                <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                    <span>16.00 - 18.00</span>
+                                    <h6>Hip-Hop</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="candy">
+                                    <span>16.00 - 19.00</span>
+                                    <h6>K-pop cover</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="candy">
+                                    <span>16.00 - 19.00</span>
+                                    <h6>Hip-Hop</h6>
+                                </td>
+                                <td class="hover-bg ts-item" data-tsmeta="ppsr">
+                                    <span>16.00 - 17.00</span>
+                                    <h6>Hip-Hop</h6>
+                                </td>
+                                <td class="hover-bg ts-item" data-tsmeta="murph">
+                                    <span>16.00 - 20.00</span>
+                                    <h6>K-pop cover</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">18.00</td>
+                                <td class="hover-bg ts-item" data-tsmeta="walls">
+                                    <span>18.00 - 20.00</span>
+                                    <h6>Krump</h6>
+                                </td>
+                                <td class="hover-bg ts-item" data-tsmeta="ppsr">
+                                    <span>18.00 - 20.00</span>
+                                    <h6>K-pop cover</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="chelsea">
+                                    <span>18.00 - 22.00</span>
+                                    <h6>Krump</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="annie">
+                                    <span>18.00 - 22.00</span>
+                                    <h6>Krump</h6>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="workout-time">20.00</td>
+                                <td class="hover-bg ts-item" data-tsmeta="lunge">
+                                    <span>21.00 - 23.00</span>
+                                    <h6>Ballet</h6>
+                                </td>
+                                <td class="hover-bg ts-item" data-tsmeta="walls">
+                                    <span>20.00 - 22.00</span>
+                                    <h6>Krump</h6>
+                                </td>
+                                <td class="hover-bg ts-item" data-tsmeta="walls">
+                                    <span>20.30 - 23.00</span>
+                                    <h6>Hip-Hop</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                    <span>22.00 - 23.00</span>
+                                    <h6>Ballet</h6>
+                                </td>
+                                <td></td>
+                                <td class="hover-bg ts-item" data-tsmeta="crossfit">
+                                    <span>21.00 - 23.00</span>
+                                    <h6>Hip-Hop</h6>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- Class Time Section End -->
+
+        <!-- Price Plan Section Begin -->
+        <section class="price-section spad set-bg" data-setbg="{% static 'img/about-bread.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>CHOOSE YOUR PRICING PLAN</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-price-plan">
+                            <h4>Normal</h4>
+                            <div class="price-plan">
+                                <h2>55 <span>$</span></h2>
+                                <p>Monthly</p>
+                            </div>
+                            <ul>
+                                <li>Unlimited access to the studio</li>
+                                <li>1 classes per week</li>
+                                <li>FREE drinking package</li>
+                                <li>1 Free personal training</li>
+                            </ul>
+                            <a href="#" class="primary-btn price-btn">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-price-plan">
+                            <h4>Professional</h4>
+                            <div class="price-plan">
+                                <h2>95 <span>$</span></h2>
+                                <p>Monthly</p>
+                            </div>
+                            <ul>
+                                <li>Unlimited access to the studio</li>
+                                <li>2 classes per week</li>
+                                <li>FREE drinking package</li>
+                                <li>2 Free personal training</li>
+                            </ul>
+                            <a href="#" class="primary-btn price-btn">Get Started</a>
+                            <div class="tic-text">
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-price-plan">
+                            <h4>Advanced</h4>
+                            <div class="price-plan">
+                                <h2>165 <span>$</span></h2>
+                                <p>Monthly</p>
+                            </div>
+                            <ul>
+                                <li>Unlimited access to the studio</li>
+                                <li>6 classes per week</li>
+                                <li>FREE drinking package</li>
+                                <li>5 Free personal training</li>
+                            </ul>
+                            <a href="#" class="primary-btn price-btn">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Price Plan Section End -->
+
+        <!-- Map Section Begin -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4031.3481366633223!2d76.93105064350861!3d43.236522594337956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836eda7804dd07%3A0x719365a568e97946!2sSatbayev%20University!5e0!3m2!1sru!2skz!4v1645781260606!5m2!1sru!2skz" width="600" height="590" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-contact-detalis">
+                <div class="open-time">
+                    <h5>Weekday:</h5>
+                    <ul>
+                        <li>Weekday: <span>06:30 - 11:00</span></li>
+                        <li>Saturday: <span>07:00 - 22:00</span></li>
+                        <li>Sunday: <span>09:00 - 18:00</span></li>
+                    </ul>
+                </div>
+                <div class="map-contact-form">
+                    <h5>Contact Us</h5>
+                    <form action="#">
+                        <input type="text" placeholder="Name">
+                        <input type="text" class="phone" placeholder="Phone">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit" class="site-btn">Submit Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!-- Map Section End -->
+    {% endblock %}
+
+    {% block footer %}
+    <!-- Footer Section Begin -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-logo-item">
+                            <div class="f-logo">
+                                <a href="#"><img src="../static/img/logo.png" alt=""></a>
+                            </div>
+                            <div class="social-links">
+                                <h6>Follow us</h6>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-widget">
+                            <h5>Get Info</h5>
+                            <ul class="footer-info">
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <span>Phone:</span>
+                                    8 747 604 22 34
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span>Email:</span>
+                                    zhanerke2506@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Address</span>
+                                    Satbayev 22, Almaty
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="ct-inside">
+                                Copyright &copy; All rights reserved
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Footer Section End -->
+    {% endblock footer %}
+
+    <!-- Js Plugins -->
+    {% load static %}
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

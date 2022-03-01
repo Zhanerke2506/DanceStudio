@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Activitar Template">
+    <meta name="keywords" content="Activitar, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title  %}
+        <title>
+            Activitar | Template
+        </title>
+    {% endblock title  %}
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="{% url 'index' %}">
+                        <img src="{% static 'img/logo.png' %}" alt="">
+                    </a>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div class="container">
+                <div class="nav-menu">
+                    <nav class="mainmenu mobile-menu">
+                        <ul>
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="{% url 'aboutus' %}">About us</a></li>
+                            <li class="active"><a href="{% url 'choreo' %}">Choreographers</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg spad" data-setbg="{% static 'img/about-bread.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <h2>Our Choreographers</h2>
+                        <div class="breadcrumb-controls">
+                            <a href="{% url 'index' %}"><i class="fa fa-home"></i> Home</a>
+                            <span>Choreographers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb End -->
+
+   <!-- Trainer Section Begin -->
+   <section class="trainer-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec sem cursus, molestie eros eu, placerat enim. Nam lorem ipsum, feugiat quis tellus et, cursus bibendum dui. Donec non convallis purus. Sed varius id diam ut vehicula.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="trainer-item">
+                        <div class="ti-pic">
+                            <img src="{% static 'img/trainer/trainer-1.jpg' %}" alt="" height="370px">
+                            <div class="ti-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                            <div class="trainer-text">
+                                <h5>J-Hope</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="trainer-item">
+                        <div class="ti-pic">
+                            <img src="{% static 'img/trainer/trainer-2.jpg' %}" alt="" height="370px">
+                            <div class="ti-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                            <div class="trainer-text">
+                                <h5>Lee Know</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="trainer-item">
+                        <div class="ti-pic">
+                            <img src="{% static 'img/trainer/trainer-3.jpg' %}" alt="" height="370px">
+                            <div class="ti-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                            <div class="trainer-text">
+                                <h5>Lisa</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="trainer-item">
+                        <div class="ti-pic">
+                            <img src="{% static 'img/trainer/trainer-4.jpg' %}" alt="" height="370px">
+                            <div class="ti-links">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                            <div class="trainer-text">
+                                <h5>Hyunjin</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Trainer Section End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo-item">
+                        <div class="f-logo">
+                            <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                        </div>
+                        <div class="social-links">
+                            <h6>Follow us</h6>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-widget">
+                        <h5>Get Info</h5>
+                        <ul class="footer-info">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>Phone:</span>
+                                8 747 604 22 34
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <span>Email:</span>
+                                zhanerke2506@gmail.com
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Address</span>
+                                Satbayev 22, Almaty
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="ct-inside">
+                        Copyright &copy; All rights reserved
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Js Plugins -->
+    <{% load static %}
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

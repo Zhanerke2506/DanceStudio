@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Activitar Template">
+    <meta name="keywords" content="Activitar, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title  %}
+        <title>
+            Activitar | Template
+        </title>
+    {% endblock title %}
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    {% load static %}
+    <link rel="stylesheet" href=" {% static 'css/bootstrap.min.css' %} " type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    {% block header %}
+    {% load static %}
+    <!-- Header Section Begin -->
+        <header class="header-section header-normal">
+            <div class="container-fluid">
+                <div class="logo">
+
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'img/logo.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div class="container">
+                    <div class="nav-menu">
+                        <nav class="mainmenu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li class="active"><a href="{% url 'aboutus' %}">About us</a></li>
+                                <li><a href="{% url 'choreo' %}">Choreographers</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Breadcrumb Section Begin -->
+        {% load static %}
+        <section class="breadcrumb-section set-bg spad" data-setbg="{% static 'img/about-bread.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb-text">
+                            <h2>About Us</h2>
+                            <div class="breadcrumb-controls">
+                                <a href="{% url 'index' %}"><i class="fa fa-home"></i> Home</a>
+                                <span>About Us</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumb End -->
+
+        <!-- Aboutus Section Begin -->
+        <section class="aboutus-section spad">
+            <div class="container">
+                <div class="aboutus-page-text">
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-10 m-auto">
+                            <div class="section-title">
+                                <h2>Who we Are & What We Do</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna lorem, luctus porta diam eu, finibus pharetra mauris. Morbi interdum quam lacus, id interdum leo maximus vitae. Donec fringilla sit amet erat ac tempor. Curabitur consequat pretium sapien a consectetur. Morbi quis semper sem. Aenean cursus non massa et porta. Donec vel leo tempus, interdum tortor in, fermentum diam. Phasellus semper malesuada convallis. Aliquam vitae neque nunc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="{% static 'img/about-us.jpg' %}" alt="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-us">
+                                <h4>ABOUT US</h4>
+                                <p>Etiam nec nulla eget orci gravida interdum in at nisi. Aenean faucibus eu nisi id maximus. Quisque et velit in lectus volutpat congue. Maecenas ligula ex, sodales in rhoncus sed, lacinia sed ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis orci ex, at pulvinar libero maximus a.</p>
+                                <p>Proin nulla mi, scelerisque et augue non, iaculis vulputate lacus. Morbi nec condimentum dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut tristique dolor. Proin at maximus leo, vel eleifend lacus. Vivamus vel pharetra nulla. Nam in urna a nisi venenatis suscipit faucibus quis diam. Duis tempus dolor sit amet erat interdum, sed semper augue pulvinar. Sed odio lorem, maximus quis nunc et, rutrum mattis ante. Vivamus aliquet tortor sit amet venenatis congue. Donec faucibus tortor lacus, eget interdum odio porta placerat. Aliquam vel interdum arcu. Praesent nec ullamcorper leo.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-quality">
+                                <h4>OUR QUALITY</h4>
+                                <p>Donec enim ipsum porta justo integer at velna vitae auctor integer congue magna
+                                    at risus auctor purus unt pretium ligula rutrum integer sapien ultrice ligula
+                                    luctus undo magna risus </p>
+                                <ul>
+                                    <li><i class="fa fa-check-circle-o"></i>Lorem ipsum dolor sitdoni amet,
+                                        consectetur dont adipis elite vivamus interdum.</li>
+                                    <li><i class="fa fa-check-circle-o"></i>Integer pulvinar ante nulla, ac
+                                        fermentum ex congue id vestibulum ensectetur.</li>
+                                    <li><i class="fa fa-check-circle-o"></i>Proin blandit nibh in quam semper
+                                        iaculis lorem ipsum dolor salama ender.</li>
+                                    <li><i class="fa fa-check-circle-o"></i>Quis ipsum suspendisse ultrices gravida.
+                                        Risus commodo viverra maecenas accumsan lacus vel facilisis. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Aboutus Section End -->
+
+        <!-- Testimonial Section End -->
+        <section class="testimonial-section set-bg spad" data-setbg="{% static 'img/testimonial-bg.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="testimonial-slider owl-carousel">
+                            <div class="ts-item">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h4 style="color: black;">Suspendisse non enim eget ex molestie pulvinar. Nulla in enim sit amet nunc iaculis dignissim quis et sapien. Praesent rutrum turpis vitae quam blandit tincidunt.</h4>
+                                <div class="author-name">
+                                    <h5 style="color: black;">Lia Kim</h5>
+                                    <span style="color: black;">Choreographer 1MILLION dance studio</span>
+                                </div>
+                                <div class="author-pic">
+                                    <img src="{% static 'img/author-pic.png' %}">
+                                </div>
+                            </div>
+                            <div class="ts-item">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h4>Suspendisse non enim eget ex molestie pulvinar. Nulla in enim sit amet nunc iaculis dignissim quis et sapien. Praesent rutrum turpis vitae quam blandit tincidunt.</h4>
+                                <div class="author-name">
+                                    <h5>Lia Kim</h5>
+                                    <span>Choreographer 1MILLION dance studio</span>
+                                </div>
+                                <div class="author-pic">
+                                    <img src="{% static 'img/author-pic.png' %}" alt="">
+                                </div>
+                            </div>
+                            <div class="ts-item">
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h4 style="color: black;">Suspendisse non enim eget ex molestie pulvinar. Nulla in enim sit amet nunc iaculis dignissim quis et sapien. Praesent rutrum turpis vitae quam blandit tincidunt.</h4>
+                                <div class="author-name">
+                                    <h5 style="color: black;">Lia Kim</h5>
+                                    <span style="color: black;">Choreographer 1MILLION dance studio</span>
+                                </div>
+                                <div class="author-pic">
+                                    <img src="{% static 'img/author-pic.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial Section End -->
+
+        <!-- Choseus Section Begin -->
+        <section class="chooseus-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>Why People Choose Us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec sem cursus, molestie eros eu, placerat enim.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="choose-item">
+                            <img src="{% static 'img/icons/chose-icon-1.png' %}" alt="">
+                            <h5>Support 24/24</h5>
+                            <p>Mauris id lacus et est porttitor lobortis non eget quam. In nisi magna, venenatis eu luctus tempus, finibus sed arcu. Sed auctor nunc nec aliquam fringilla. Ut finibus mi sed faucibus lobortis. Nullam vehicula risus at leo blandit aliquam.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="choose-item">
+                            <img src="{% static 'img/icons/chose-icon-2.png' %}" alt="">
+                            <h5>Our choreographers</h5>
+                            <p>Nulla vestibulum pretium felis bibendum auctor. Nunc dapibus augue id enim ullamcorper, nec laoreet nisi dignissim. Donec sed massa nec justo scelerisque mattis ut in nisi. Nam mauris odio, consequat vitae justo ut, aliquet lobortis ligula.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="choose-item">
+                            <img src="{% static 'img/icons/chose-icon-3.png' %}" alt="">
+                            <h5>Studio</h5>
+                            <p>Nunc vitae ullamcorper nisi, at imperdiet libero. Curabitur ut efficitur augue. Vestibulum a vestibulum tortor. Suspendisse potenti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Choseus Section End -->
+    {% endblock %}
+
+    {% block footer %}
+        <!-- Footer Section Begin -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-logo-item">
+                            <div class="f-logo">
+                                <a href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>
+                            </div>
+                            <div class="social-links">
+                                <h6>Follow us</h6>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-widget">
+                            <h5>Get Info</h5>
+                            <ul class="footer-info">
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <span>Phone:</span>
+                                    8 747 604 22 34
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span>Email:</span>
+                                    zhanerke2506@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>Address</span>
+                                    Satbayev 22, Almaty
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="ct-inside">
+                            Copyright &copy; All rights reserved
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Footer Section End -->
+    {% endblock footer %}
+
+    <!-- Js Plugins -->
+    {% load static %}
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/mixitup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
